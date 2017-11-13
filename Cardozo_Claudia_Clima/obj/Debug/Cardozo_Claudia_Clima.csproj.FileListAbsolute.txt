@@ -13,3 +13,4 @@ c:\users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardoz
 c:\users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.pdb
 c:\users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\bin\Debug\Newtonsoft.Json.dll
 c:\users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.csprojResolveAssemblyReference.cache

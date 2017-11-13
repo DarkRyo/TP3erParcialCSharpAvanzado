@@ -77,9 +77,11 @@ namespace Cardozo_Claudia_Clima
                 lblMaximo.Content = string.Format("{0}°C", outPut.main.temp_max);
                 lblHumedad.Content = string.Format("{0}%", outPut.main.humidity);
                 lblPresionAtm.Content = string.Format("{0}hPa", outPut.main.pressure);
-                lblCielo.Content = string.Format("{0}", outPut.weather[0].main);
+                lblCielo.Content = string.Format("{0}", outPut.weather[0].main); // por alguna razon me trae otro valor
                 lblCondicion.Content = string.Format("{0}", outPut.weather[0].description);
-            
+                lblDia.Content = string.Format("{0}", getDate(outPut.dt).DayOfWeek);
+
+
 
             }
          }
@@ -114,8 +116,10 @@ namespace Cardozo_Claudia_Clima
                 lblCond.Content = string.Format("{0}", forcast.list[1].weather[0].description);
                 lblCondicion.Content = string.Format("{0}", forcast.list[1].weather[0].main);
                 lblHumedad_Copy.Content = string.Format("{0} %", forcast.list[1].main.humidity); // por alguna razon no me toma la humedad 
+               
                 lblMaximo_Copy.Content = string.Format("{0}°C", forcast.list[1].main.temp_max);
                 lblMinimo_Copy.Content = string.Format("{0}°C", forcast.list[1].main.temp_min);
+                lblDia_Copy.Content = string.Format("{0}", getDate(forcast.list[1].dt).DayOfWeek); // me trae la misma fecha que el clima actual xd
             }
         }
        

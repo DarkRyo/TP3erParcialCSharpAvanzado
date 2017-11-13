@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cardozo_Claudia_Clima"
         mc:Ignorable="d"
-        Title="MainWindow" Height="439.799" Width="694.809">
+        Title="Clima" Height="439.799" Width="694.809" Icon="http://i1087.photobucket.com/albums/j472/Claudia_Cardozo/thermometer_zpsrxhjtsyq.png">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\user\Documents\Visual Studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\fondo.png"/>
+            <ImageBrush ImageSource="http://i1087.photobucket.com/albums/j472/Claudia_Cardozo/fondo_zpsi98lh9rx.png"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="134*"/>
@@ -27,30 +27,30 @@
             </Rectangle.RenderTransform>
         </Rectangle>
 
-        <Label x:Name="ClimaEn" Content="Clima en " HorizontalAlignment="Left" Height="36" Margin="51,43,0,0" VerticalAlignment="Top" Width="157" FontSize="20"/>
-        <Label x:Name="lblGrados" Content="99C" HorizontalAlignment="Left" Height="81" Margin="61,79,0,0" VerticalAlignment="Top" Width="116" FontSize="48"/>
+        <Label x:Name="ClimaEn" Content="Clima en " HorizontalAlignment="Left" Height="36" Margin="45,38,0,0" VerticalAlignment="Top" Width="157" FontSize="20"/>
+        <Label x:Name="lblGrados" Content="99C" HorizontalAlignment="Left" Height="81" Margin="51,65,0,0" VerticalAlignment="Top" Width="116" FontSize="48"/>
         <Label x:Name="maximo" Content="Temp.Min" HorizontalAlignment="Left" Height="25" Margin="26,176,0,0" VerticalAlignment="Top" Width="61"/>
         <Label x:Name="minimo" Content="Temp.Max" HorizontalAlignment="Left" Height="25" Margin="26,206,0,0" VerticalAlignment="Top" Width="71"/>
-        <Image x:Name="imgClima" HorizontalAlignment="Left" Height="77" Margin="177,83,0,0" VerticalAlignment="Top" Width="72" Source="https://openweathermap.org/img/w/01n.png"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="258" Margin="395,24,0,0" Stroke="#FF4E7D8D" VerticalAlignment="Top" Width="274" Grid.ColumnSpan="2" Opacity="0.2"/>
-        <Label x:Name="lblCiudad" Content="xxxxxxxxx" HorizontalAlignment="Left" Height="36" Margin="158,43,0,0" VerticalAlignment="Top" Width="100" FontSize="20"/>
+        <Image x:Name="imgClima" HorizontalAlignment="Left" Height="77" Margin="186,74,0,0" VerticalAlignment="Top" Width="72" Source="https://openweathermap.org/img/w/01n.png"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="267" Margin="395,24,0,0" Stroke="#FF4E7D8D" VerticalAlignment="Top" Width="274" Grid.ColumnSpan="2" Opacity="0.2"/>
+        <Label x:Name="lblCiudad" Content="xxxxxxxxx" HorizontalAlignment="Left" Height="36" Margin="152,38,0,0" VerticalAlignment="Top" Width="100" FontSize="20"/>
         <Label x:Name="Humedad" Content="Humedad" HorizontalAlignment="Left" Height="25" Margin="218,176,0,0" VerticalAlignment="Top" Width="65"/>
         <Label x:Name="lblHumedad" Content="99%" HorizontalAlignment="Left" Height="25" Margin="302,176,0,0" VerticalAlignment="Top" Width="51"/>
         <Label x:Name="lblMinimo" Content="99" HorizontalAlignment="Left" Height="25" Margin="96,176,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="1.542,0.66"/>
         <Label x:Name="lblMaximo" Content="99" HorizontalAlignment="Left" Height="25" Margin="97,206,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="1.542,0.66"/>
-        <Label x:Name="lblPais" Content="xx" HorizontalAlignment="Left" Height="36" Margin="258,43,0,0" VerticalAlignment="Top" Width="31" FontSize="20"/>
-        <Label x:Name="ClimaEn_Copy" Content="Pronostico Extendido" HorizontalAlignment="Left" Height="36" Margin="35,43,0,0" VerticalAlignment="Top" Width="203" FontSize="20" Grid.Column="1"/>
-        <Image x:Name="imgClima_Copy" HorizontalAlignment="Left" Height="59" Margin="154,79,0,0" VerticalAlignment="Top" Width="62" Source="https://openweathermap.org/img/w/01n.png" Grid.Column="1" RenderTransformOrigin="0.321,0.604"/>
-        <Label x:Name="maximo_Copy" Content="Temp.Min" HorizontalAlignment="Left" Height="25" Margin="21,146,0,0" VerticalAlignment="Top" Width="61" Grid.Column="1"/>
-        <Label x:Name="minimo_Copy" Content="Temp.Max" HorizontalAlignment="Left" Height="25" Margin="22,171,0,0" VerticalAlignment="Top" Width="71" Grid.Column="1"/>
-        <Label x:Name="lblMinimo_Copy" Content="99" HorizontalAlignment="Left" Height="25" Margin="91,146,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="1.542,0.66" Grid.Column="1"/>
-        <Label x:Name="lblMaximo_Copy" Content="99" HorizontalAlignment="Left" Height="25" Margin="93,171,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="1.542,0.66" Grid.Column="1"/>
-        <Label x:Name="Humedad_Copy" Content="Humedad" HorizontalAlignment="Left" Height="25" Margin="22,196,0,0" VerticalAlignment="Top" Width="65" Grid.Column="1"/>
-        <Label x:Name="lblHumedad_Copy" Content="99%" HorizontalAlignment="Left" Height="25" Margin="93,196,0,0" VerticalAlignment="Top" Width="51" Grid.Column="1"/>
-        <Label x:Name="Humedad_Copy1" Content="Cielo" HorizontalAlignment="Left" Height="25" Margin="23,221,0,0" VerticalAlignment="Top" Width="65" Grid.Column="1"/>
-        <Label x:Name="Humedad_Copy2" Content="Condicion" HorizontalAlignment="Left" Height="25" Margin="23,246,0,0" VerticalAlignment="Top" Width="70" Grid.Column="1"/>
-        <Label x:Name="lblCilo" Content="Despejado" HorizontalAlignment="Left" Height="25" Margin="92,221,0,0" VerticalAlignment="Top" Width="73" Grid.Column="1"/>
-        <Label x:Name="lblCond" Content="lindo'i" HorizontalAlignment="Left" Height="25" Margin="93,246,0,0" VerticalAlignment="Top" Width="73" Grid.Column="1"/>
+        <Label x:Name="lblPais" Content="xx" HorizontalAlignment="Left" Height="36" Margin="252,38,0,0" VerticalAlignment="Top" Width="31" FontSize="20"/>
+        <Label x:Name="ClimaEn_Copy" Content="Pronostico Extendido" HorizontalAlignment="Left" Height="36" Margin="28,38,0,0" VerticalAlignment="Top" Width="204" FontSize="20" Grid.Column="1"/>
+        <Image x:Name="imgClima_Copy" HorizontalAlignment="Left" Height="76" Margin="188,70,0,0" VerticalAlignment="Top" Width="79" Source="https://openweathermap.org/img/w/01n.png" RenderTransformOrigin="0.321,0.604" Grid.Column="1"/>
+        <Label x:Name="maximo_Copy" Content="Temp.Min" HorizontalAlignment="Left" Height="25" Margin="22,153,0,0" VerticalAlignment="Top" Width="61" Grid.Column="1"/>
+        <Label x:Name="minimo_Copy" Content="Temp.Max" HorizontalAlignment="Left" Height="25" Margin="23,178,0,0" VerticalAlignment="Top" Width="71" Grid.Column="1"/>
+        <Label x:Name="lblMinimo_Copy" Content="99" HorizontalAlignment="Left" Height="25" Margin="92,153,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="1.542,0.66" Grid.Column="1"/>
+        <Label x:Name="lblMaximo_Copy" Content="99" HorizontalAlignment="Left" Height="25" Margin="94,178,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="1.542,0.66" Grid.Column="1"/>
+        <Label x:Name="Humedad_Copy" Content="Humedad" HorizontalAlignment="Left" Height="25" Margin="23,203,0,0" VerticalAlignment="Top" Width="65" Grid.Column="1"/>
+        <Label x:Name="lblHumedad_Copy" Content="99%" HorizontalAlignment="Left" Height="25" Margin="94,203,0,0" VerticalAlignment="Top" Width="51" Grid.Column="1"/>
+        <Label x:Name="Humedad_Copy1" Content="Cielo" HorizontalAlignment="Left" Height="25" Margin="24,228,0,0" VerticalAlignment="Top" Width="65" Grid.Column="1"/>
+        <Label x:Name="Humedad_Copy2" Content="Condicion" HorizontalAlignment="Left" Height="25" Margin="24,253,0,0" VerticalAlignment="Top" Width="70" Grid.Column="1"/>
+        <Label x:Name="lblCilo" Content="Despejado" HorizontalAlignment="Left" Height="25" Margin="93,228,0,0" VerticalAlignment="Top" Width="73" Grid.Column="1"/>
+        <Label x:Name="lblCond" Content="lindo'i" HorizontalAlignment="Left" Height="25" Margin="94,253,0,0" VerticalAlignment="Top" Width="73" Grid.Column="1"/>
         <Label x:Name="PresionAtm" Content="Presion&#xA;Atmosferica" HorizontalAlignment="Left" Height="50" Margin="218,202,0,0" VerticalAlignment="Top" Width="79"/>
         <Label x:Name="lblPresionAtm" Content="99%" HorizontalAlignment="Left" Height="25" Margin="302,212,0,0" VerticalAlignment="Top" Width="61"/>
         <Label x:Name="Humedad_Copy3" Content="Cielo" HorizontalAlignment="Left" Height="25" Margin="27,232,0,0" VerticalAlignment="Top" Width="65"/>
@@ -61,9 +61,11 @@
         <Label x:Name="lblVelViento" Content="99%" HorizontalAlignment="Left" Height="25" Margin="302,246,0,0" VerticalAlignment="Top" Width="70"/>
         <ComboBox x:Name="cboCiudad" HorizontalAlignment="Left" Height="30" Margin="167,333,0,0" VerticalAlignment="Top" Width="186" SelectionChanged="cboCiudad_SelectionChanged"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="20" Margin="19,339,0,0" TextWrapping="Wrap" Text="Seleccionar Ciudad" VerticalAlignment="Top" Width="137" Foreground="White" FontWeight="Bold" FontSize="14"/>
-        <Label x:Name="dia" Content="Dia" HorizontalAlignment="Left" Height="25" Margin="26,151,0,0" VerticalAlignment="Top" Width="61"/>
-        <Label x:Name="lblDia" Content="99" HorizontalAlignment="Left" Height="25" Margin="96,151,0,0" VerticalAlignment="Top" Width="51" RenderTransformOrigin="1.542,0.66"/>
-        <Label x:Name="lblGrados_Copy" Content="99C" HorizontalAlignment="Left" Height="81" Margin="21,65,0,0" VerticalAlignment="Top" Width="116" FontSize="48" Grid.Column="1"/>
+        <Label x:Name="dia" Content="Dia" HorizontalAlignment="Left" Height="25" Margin="26,151,0,0" VerticalAlignment="Top" Width="61" FontWeight="Bold"/>
+        <Label x:Name="lblDia" Content="99" HorizontalAlignment="Left" Height="25" Margin="96,151,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="1.542,0.66" FontWeight="Bold"/>
+        <Label x:Name="lblGrados_Copy" Content="99C" HorizontalAlignment="Left" Height="81" Margin="22,65,0,0" VerticalAlignment="Top" Width="171" FontSize="48" Grid.Column="1"/>
+        <Label x:Name="dia_Copy" Content="Dia" HorizontalAlignment="Left" Height="25" Margin="22,128,0,0" VerticalAlignment="Top" Width="61" FontWeight="Bold" Grid.Column="1"/>
+        <Label x:Name="lblDia_Copy" Content="99" HorizontalAlignment="Left" Height="25" Margin="92,128,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="1.542,0.66" FontWeight="Bold" Grid.Column="1"/>
 
     </Grid>
 </Window>
