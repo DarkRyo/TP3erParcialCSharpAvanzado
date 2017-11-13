@@ -1,19 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using Newtonsoft.Json; //json
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net; //webClient
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Cardozo_Claudia_Clima
 {
@@ -22,47 +13,25 @@ namespace Cardozo_Claudia_Clima
     /// </summary>
     public partial class MainWindow : Window
     {
-        const string APPID = "80119fb52897c09bafcc0b0f63ed226c";
-        string nombreCiudad = "Asuncion";
+        const string APPID = "80119fb52897c09bafcc0b0f63ed226c"; //apikey
+        string nombreCiudad = "Asuncion"; // nombre de ciudad p/cbo
 
         public MainWindow()
         {
             InitializeComponent();
-            inizializarCbo();
-            getClima("Asuncion");
-            getPronostico("Asuncion");
+            inizializarCbo(); //inicializa el cbo (nio anda)
+            getClima("Asuncion"); //cambiar el parametro ciudad para cambiar
+            getPronostico("Asuncion"); //cambiar el parametro de ciudad para cambiar
                 
         }
 
-        void inizializarCbo()
-        {
-            //Lista de Ciudades
-            List<cboData> listCiudades = new List<cboData>();
-            listCiudades.Add(new cboData { Id = 0, Nombre = "" });
-            listCiudades.Add(new cboData { Id = 1, Nombre = "Asuncion" });
-            listCiudades.Add(new cboData { Id = 2, Nombre = "Capiata" });
-            listCiudades.Add(new cboData { Id = 3, Nombre = "Cordoba" });
-            listCiudades.Add(new cboData { Id = 4, Nombre = "Lambare" });
-            listCiudades.Add(new cboData { Id = 5, Nombre = "Kyoto" });
-            listCiudades.Add(new cboData { Id = 6, Nombre = "Barcelona" });
-            listCiudades.Add(new cboData { Id = 7, Nombre = "Encarnacion" });
-            
-            cboCiudad.ItemsSource = listCiudades;
-            cboCiudad.DisplayMemberPath = "Nombre";
-            cboCiudad.SelectedValuePath = "Id";
-
-            cboCiudad.SelectedValue = "0";
-
-
-
-        }
         
 
-        void getClima(string city)
+        void getClima(string nombreCiudad)
         {
             using (WebClient web = new WebClient())
             {
-                string url = string.Format("http://api.openweathermap.org/data/2.5/weather?q=Asuncion&appid=80119fb52897c09bafcc0b0f63ed226c&units=metric&cnt=6&lang=es", city, APPID);
+                string url = string.Format("http://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}&units=metric&cnt=6&lang=es", nombreCiudad, APPID); //esta en espaniol pero no trae la infomacion completa traducida. Trae en grados la temp y en hpa la presion
                 var json = web.DownloadString(url);
                 var result = JsonConvert.DeserializeObject<InfoClima.root>(json);
                 InfoClima.root outPut = result;
@@ -84,7 +53,7 @@ namespace Cardozo_Claudia_Clima
 
 
             }
-         }
+         } //consulta el clima actual en asuncion
         DateTime getDate(double millisecound)
         {
 
@@ -92,7 +61,7 @@ namespace Cardozo_Claudia_Clima
             day = day.AddSeconds(millisecound).ToLocalTime();
 
             return day;
-        }
+        } // transforma los numeros del json a dd/mm/aaaa
         BitmapImage setIcon(string iconID)
         {
             string url = string.Format("https://openweathermap.org/img/w/{0}.png", iconID); // weather icon resource 
@@ -102,12 +71,12 @@ namespace Cardozo_Claudia_Clima
             weatherImg.EndInit();
 
             return weatherImg;
-        }
-        void getPronostico(string city)
+        } //trae los iconos del clima actual
+        void getPronostico(string nombreCiudad)
         {
             using (WebClient web = new WebClient()) {
                 var day = 5;
-                string url = string.Format("http://api.openweathermap.org/data/2.5/forecast?q={0}&appid={1}&units=metric&cnt={2}&lang=es", city, APPID, day);
+                string url = string.Format("http://api.openweathermap.org/data/2.5/forecast?q={0}&appid={1}&units=metric&cnt={2}&lang=es", nombreCiudad, APPID, day); //esta en espaniol pero no trae la infomacion completa traducida. Trae en grados la temp y en hpa la presion
                 var json = web.DownloadString(url);
                 var Object = JsonConvert.DeserializeObject<InfoPronostico>(json);
                 InfoPronostico forcast = Object;
@@ -121,14 +90,36 @@ namespace Cardozo_Claudia_Clima
                 lblMinimo_Copy.Content = string.Format("{0}°C", forcast.list[1].main.temp_min);
                 lblDia_Copy.Content = string.Format("{0}", getDate(forcast.list[1].dt).DayOfWeek); // me trae la misma fecha que el clima actual xd
             }
-        }
-       
+        } //consulta el pronostico del dia siguiente en asuncion
+        void inizializarCbo()
+        {
+            //Lista de Ciudades
+            List<cboData> listCiudades = new List<cboData>();
+            listCiudades.Add(new cboData { Id = 0, Nombre = "" });
+            listCiudades.Add(new cboData { Id = 1, Nombre = "Asuncion" });
+            listCiudades.Add(new cboData { Id = 2, Nombre = "Capiata" });
+            listCiudades.Add(new cboData { Id = 3, Nombre = "Cordoba" });
+            listCiudades.Add(new cboData { Id = 4, Nombre = "Lambare" });
+            listCiudades.Add(new cboData { Id = 5, Nombre = "Kyoto" });
+            listCiudades.Add(new cboData { Id = 6, Nombre = "Barcelona" });
+            listCiudades.Add(new cboData { Id = 7, Nombre = "Encarnacion" });
 
+            cboCiudad.ItemsSource = listCiudades;
+            cboCiudad.DisplayMemberPath = "Nombre";
+            cboCiudad.SelectedValuePath = "Id";
+
+            cboCiudad.SelectedValue = "0";
+
+
+
+        }// intento no terminado (aun) del cbo
         private void cboCiudad_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
            nombreCiudad = cboCiudad.SelectedItem.ToString();
             
         }
+
+
     }
       
         

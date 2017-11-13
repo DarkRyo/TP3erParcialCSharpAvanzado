@@ -14,3 +14,19 @@ c:\users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardoz
 c:\users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\bin\Debug\Newtonsoft.Json.dll
 c:\users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\bin\Debug\Newtonsoft.Json.xml
 C:\Users\user\documents\visual studio 2015\Projects\Cardozo_Claudia_Clima\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\bin\Debug\Cardozo_Claudia_Clima.exe.config
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.exe
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.pdb
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\bin\Debug\Cardozo_Claudia_Clima.exe
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\bin\Debug\Cardozo_Claudia_Clima.pdb
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\MainWindow.g.cs
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\App.g.cs
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima_MarkupCompile.cache
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima_MarkupCompile.lref
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\MainWindow.baml
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.g.resources
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.Properties.Resources.resources
+C:\Users\user\Documents\GitKraken\TP3erParcialCSharpAvanzado\Cardozo_Claudia_Clima\obj\Debug\Cardozo_Claudia_Clima.csproj.GenerateResource.Cache
